@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="bg-blue-500 text-white p-4">
+      This is a test component with Tailwind CSS styles.
+    </div>
+  );
+};
 
-export default App
+export default App;

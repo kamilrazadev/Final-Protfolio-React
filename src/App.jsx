@@ -1,10 +1,11 @@
 import React from "react";
+import Home from "./Pages/Home";
 
 const App = () => {
   return (
-    <div className="bg-blue-500 text-white p-4">
-      This is a test component with Tailwind CSS styles.
-    </div>
+    <>
+      <Home />
+    </>
   );
 };
 

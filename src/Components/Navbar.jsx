@@ -4,7 +4,7 @@ import mailIcon from "/mail-icon.png";
 
 const Navbar = () => {
   return (
-    <nav className="w-full p-4 flex justify-between text-3xl font-bold text-mk-primary shadow-lg">
+    <nav className="w-full p-4 flex justify-between text-3xl font-bold text-mk-primary shadow-lg z-50">
       <h1 className="heading">
         M<span className="text-mk-secondary">.</span>
         Kamil

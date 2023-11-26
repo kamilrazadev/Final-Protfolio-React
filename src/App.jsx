@@ -1,11 +1,18 @@
 import React from "react";
-import Home from "./Pages/Home";
+import "../src/App.css";
+import HeroSection from "./Sections/HeroSection";
+import About from "./Sections/About";
 
 const App = () => {
   return (
-    <>
-      <Home />
-    </>
+    <main>
+      <div className="main">
+        <div className="overlay">
+          <HeroSection />
+          <About />
+        </div>
+      </div>
+    </main>
   );
 };
 

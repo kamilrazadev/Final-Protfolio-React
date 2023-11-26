@@ -4,16 +4,16 @@ import "../Components/Components.css";
 const Navbar = () => {
   return (
     <nav className="w-full p-5 text-3xl font-bold text-mk-primary shadow-lg">
-      <h1 class="heading">
-        M<span class="text-mk-secondary">.</span>
+      <h1 className="heading">
+        M<span className="text-mk-secondary">.</span>
         Kamil
-        <span class="text-mk-secondary">Raza</span>
+        <span className="text-mk-secondary">Raza</span>
       </h1>
 
-      <div class="social-card-navbar flex ms-2">
-        <a class="!transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer">
+      <div className="social-card-navbar flex ms-2">
+        <a className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer">
           <svg
-            className="flex absolute w-[30px] h-auto !text-[10px] font-bold !transition-all z-10 !text-black cursor-pointer"
+            className="flex absolute w-[30px] h-auto text-[10px] font-bold transition-all z-10 text-black cursor-pointer"
             fill="currentColor"
             height="16"
             width="16"
@@ -25,11 +25,10 @@ const Navbar = () => {
             ></path>
           </svg>
         </a>
-        <a class="!transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer ">
+        <a className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer ">
           <svg
-            className="flex absolute !w-[30px] !h-auto !font-bold !transition-all z-10 !text-black !cursor-pointer"
+            className="flex absolute w-[30px] h-auto font-bold transition-all z-10 text-black cursor-pointer"
             viewBox="0 0 16 16"
-            // class="bi bi-twitter"
             fill="currentColor"
             height="16"
             width="16"
@@ -41,9 +40,9 @@ const Navbar = () => {
             ></path>
           </svg>
         </a>
-        <a class="!transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer ">
+        <a className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer ">
           <svg
-            className="flex !absolute !w-[30px] !h-auto !font-bold !transition-all z-10 !text-black !cursor-pointer"
+            className="flex absolute w-[30px] h-auto font-bold transition-all z-10 text-black cursor-pointer"
             fill="currentColor"
             viewBox="0 0 448 512"
             height="1em"
@@ -55,11 +54,10 @@ const Navbar = () => {
             ></path>
           </svg>
         </a>
-        <a class="!transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer ">
+        <a className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer ">
           <svg
-            className="!flex !absolute !w-[30px] !h-auto font-bold !transition-all z-10 !text-black !cursor-pointer"
+            className="flex absolute w-[30px] h-auto font-bold transition-all z-10 text-black cursor-pointer"
             viewBox="0 0 16 16"
-            class="bi bi-whatsapp"
             fill="currentColor"
             height="16"
             width="16"

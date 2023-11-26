@@ -84,7 +84,8 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="social-card-navbar absolute bottom-1 left-0 ms-2 min-[540px]:hidden">
+      {/* mobile social icons */}
+      <div className="responsive-social-icons absolute bottom-3 left-0 min-[540px]:hidden rounded-e-md">
         <a
           href="https://www.facebook.com/profile.php?id=100091558447727"
           target="_blank"

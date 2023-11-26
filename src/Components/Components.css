@@ -1,0 +1,58 @@
+
+.social-card-navbar a:first-child:hover {
+    background-color: #1877f2;
+    animation: bounce_613 0.4s linear;
+  }
+
+  .social-card-navbar svg {
+    color: black !important;
+  }
+  
+  .social-card-navbar a:first-child:hover svg {
+    color: #fff !important;
+  }
+  
+  .social-card-navbar a:nth-child(2):hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .social-card-navbar a:nth-child(2):hover svg {
+    color: #fff !important;
+  }
+  
+  .social-card-navbar a:nth-child(3):hover {
+    background-color: #0077b5;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .social-card-navbar a:nth-child(3):hover svg {
+    color: #fff !important;
+  }
+  
+  .social-card-navbar a:nth-child(4):hover {
+    background-color: #3ae231;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .social-card-navbar a:nth-child(4):hover svg {
+    color: #fff !important;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -5,7 +5,12 @@ export default {
     "./index.html", // Include the HTML file in the root directory
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "mk-primary": "#353535",
+        "mk-secondary": "#980000",
+      },
+    },
   },
   plugins: [],
 };

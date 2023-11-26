@@ -1,12 +1,14 @@
-import React from 'react'
-import Navbar from '../Components/Navbar'
+import React from "react";
+import Navbar from "../Components/Navbar";
+import HeroSection from "../Components/HeroSection";
 
 const Home = () => {
   return (
     <main>
-        <Navbar/>
+      <Navbar />
+      <HeroSection />
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

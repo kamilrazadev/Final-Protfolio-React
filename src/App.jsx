@@ -5,7 +5,7 @@ import About from "./Sections/About";
 
 const App = () => {
   return (
-    <main>
+    <main className=" min-h-screen">
       <HeroSection />
       <About />
     </main>

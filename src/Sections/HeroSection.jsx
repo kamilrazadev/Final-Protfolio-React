@@ -8,13 +8,13 @@ import { IoMailOutline } from "react-icons/io5";
 const About = () => {
   return (
     <main className="wrapper grid md:grid-cols-2 items-center flex-col gap-7 md:gap-5 justify-center md:justify-between">
-      <div className="">
+      <div className="flex justify-center md:justify-start">
         <div className="max-w-[450px] flex flex-col justify-center items-center max-[500px]:items-start md:items-start md:gap-3">
           <h4 className="text-mk-secondary mb-4">Hello! Welcome</h4>
           <h1 className="text-2xl min-[366px]:text-[35px] sm:text-4xl lg:text-5xl font-bold">
             I'm M.Kamil Raza
           </h1>
-          <h1 className="text-2xl min-[366px]:text-[35px] text-[35px] sm:text-4xl lg:text-5xl font-bold">
+          <h1 className="text-2xl min-[366px]:text-[35px] sm:text-4xl lg:text-5xl font-bold">
             Web Developer
           </h1>
           <div>
@@ -69,7 +69,9 @@ const About = () => {
         </div>
       </div>
       <div className="flex justify-center md:justify-end">
-        <img src={aboutImage} alt="Image" className="w-[400px] max-w-full" />
+        <div className="flex justify-center md:justify-end w-[80%] md:w-[90%]">
+          <img src={aboutImage} alt="Image" className="w-full max-w-[500px]" />
+        </div>
       </div>
     </main>
   );

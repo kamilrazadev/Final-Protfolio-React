@@ -42,11 +42,7 @@
 
   .responsive-social-icons a {
     animation: bounce_613 0.5s linear;
-    animation-delay: 1s;
-  }
-
-  .responsive-social-icons {
-    box-shadow: rgba(90, 90, 95, 0.2) 0 7px 29px 1px;
+    animation-delay: 300ms;
   }
   
   @keyframes bounce_613 {

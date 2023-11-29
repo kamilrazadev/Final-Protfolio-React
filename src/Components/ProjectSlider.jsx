@@ -15,22 +15,20 @@ const ProjectSlider = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="slider-container">
       <button
         onClick={prevSlide}
         className="absolute top-[50%] text-[1.3rem] md:text-[2rem] bg-none border-none cursor-pointer translate-y-[-50%] left-[2px] min-[475]:left[5px] sm:left-[15px] md:left-[20px]"
       >
         {"<"}
       </button>
-      <div className="slider-container">
-        <div
-          className="slider-inner"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((image, index) => (
-            <img key={index} src={image} alt={`slide ${index}`} />
-          ))}
-        </div>
+      <div
+        className="slider-inner"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((image, index) => (
+          <img key={index} src={image} alt={`slide ${index}`} />
+        ))}
       </div>
       <button
         onClick={nextSlide}

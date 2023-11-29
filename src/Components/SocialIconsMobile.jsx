@@ -8,7 +8,7 @@ const SocialIconsMobile = () => {
         <a
           href="https://www.facebook.com/profile.php?id=100091558447727"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[38px] h-[38px] text-white bg-[#1877f2] text-[24px] rounded-[50px] cursor-pointer"
+          className="transition-all relative flex items-center justify-center w-[38px] h-[38px] text-white bg-[#1877f2]  text-[24px] shadow-custom rounded-[50px] cursor-pointer"
         >
           <svg
             className="flex absolute w-[23px] h-auto text-[10px] font-bold transition-all z-10 text-white cursor-pointer"
@@ -26,7 +26,7 @@ const SocialIconsMobile = () => {
         <a
           href="https://github.com/kamilrazadev"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#808080] text-[24px] rounded-[50px] cursor-pointer "
+          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#808080]  text-[24px] shadow-custom rounded-[50px] cursor-pointer "
         >
           <svg
             className="flex absolute w-[25px] h-auto font-bold transition-all z-10 text-white cursor-pointer"
@@ -41,7 +41,7 @@ const SocialIconsMobile = () => {
         <a
           href="https://www.linkedin.com/in/kamilrazadev/"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#0077b5] text-[24px] rounded-[50px] cursor-pointer "
+          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#0077b5]  text-[24px] shadow-custom rounded-[50px] cursor-pointer "
         >
           <svg
             className="flex absolute w-[23px] h-auto font-bold transition-all z-10 text-white cursor-pointer"
@@ -59,7 +59,7 @@ const SocialIconsMobile = () => {
         <a
           href="https://wa.me/923196995115"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#3ae231] text-[24px] rounded-[50px] cursor-pointer "
+          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#3ae231]  text-[24px] shadow-custom rounded-[50px] cursor-pointer "
         >
           <svg
             className="flex absolute w-[25px] h-auto font-bold transition-all z-10 text-white cursor-pointer"

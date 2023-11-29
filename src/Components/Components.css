@@ -44,6 +44,10 @@
     animation: bounce_613 0.5s linear;
     animation-delay: 300ms;
   }
+
+  .shadow-custom {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0), 0 4px 8px 1px rgba(0, 0, 0, 0.514);
+  }
   
   @keyframes bounce_613 {
     40% {

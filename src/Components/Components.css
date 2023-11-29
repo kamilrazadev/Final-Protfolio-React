@@ -1,12 +1,14 @@
+.social-card-navbar svg {
+  color: rgb(79, 78, 78) !important;
+}
+
+
+
 .social-card-navbar a:first-child:hover {
     background-color: #1877f2;
     animation: bounce_613 0.4s linear;
   }
 
-  .social-card-navbar svg {
-    color: black !important;
-  }
-  
   .social-card-navbar a:first-child:hover svg {
     color: #fff !important;
   }
@@ -38,8 +40,9 @@
     color: #fff !important;
   }
 
-  .responsive-social-icons svg {  
-      color: #000 !important;
+  .responsive-social-icons a {
+    animation: bounce_613 0.5s linear;
+    animation-delay: 1s;
   }
 
   .responsive-social-icons {

@@ -3,7 +3,7 @@ import "../Components/Components.css";
 
 const SocialIconsMobile = () => {
   return (
-    <div className="responsive-social-icons w-full flex justify-center fixed bottom-2 left-0 min-[540px]:hidden">
+    <div className="responsive-social-icons w-full flex justify-center fixed bottom-2 left-0 z-[9999] min-[540px]:hidden">
       <div className="flex gap-2">
         <a
           href="https://www.facebook.com/profile.php?id=100091558447727"

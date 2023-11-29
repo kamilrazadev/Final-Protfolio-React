@@ -48,7 +48,25 @@
   .shadow-custom {
     box-shadow: 0 1px 3px 0 rgb(0 0 0), 0 2px 3px 0px rgba(0, 0, 0, 0.514);
   }
+
+  /* Slider */
+  .slider-container {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden; /* Hide overflow to create a sliding effect */
+  }
   
+  .slider-inner {
+    display: flex; /* Enable horizontal arrangement of images */
+    transition: transform 0.5s ease; /* Add a transition effect to the transform property */
+  }
+  
+  img {
+    flex: 0 0 100%; /* Ensure images take the full width */
+    height: auto;
+  }
+
   @keyframes bounce_613 {
     40% {
       transform: scale(1.4);

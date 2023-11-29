@@ -5,7 +5,7 @@ import mailIcon from "/mail-icon.png";
 const Navbar = () => {
   return (
     <nav className="w-full p-4 flex justify-between text-3xl font-bold text-mk-primary shadow-lg z-50 sticky top-0 left-0 bg-gray-50/70 backdrop-blur-[6px]">
-      <h1 className="heading">
+      <h1 className="heading text-2xl sm:text-3xl flex items-center">
         M<span className="text-mk-secondary">.</span>
         Kamil
         <span className="text-mk-secondary">Raza</span>

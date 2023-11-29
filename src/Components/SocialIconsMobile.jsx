@@ -1,24 +1,17 @@
 import React from "react";
 import "../Components/Components.css";
-import mailIcon from "/mail-icon.png";
 
-const Navbar = () => {
+const SocialIconsMobile = () => {
   return (
-    <nav className="w-full p-4 flex justify-between text-3xl font-bold text-mk-primary shadow-lg z-50 sticky top-0 left-0 bg-gray-50/70 backdrop-blur-[6px]">
-      <h1 className="heading">
-        M<span className="text-mk-secondary">.</span>
-        Kamil
-        <span className="text-mk-secondary">Raza</span>
-      </h1>
-
-      <div className="social-card-navbar flex ms-2 max-[540px]:hidden">
+    <div className="responsive-social-icons w-full flex justify-center fixed bottom-2 left-0 min-[540px]:hidden">
+      <div className="flex gap-2">
         <a
           href="https://www.facebook.com/profile.php?id=100091558447727"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer"
+          className="transition-all relative flex items-center justify-center w-[38px] h-[38px] text-white bg-[#1877f2] text-[24px] rounded-[50px] cursor-pointer"
         >
           <svg
-            className="flex absolute w-[30px] h-auto text-[10px] font-bold transition-all z-10 text-black cursor-pointer"
+            className="flex absolute w-[23px] h-auto text-[10px] font-bold transition-all z-10 text-white cursor-pointer"
             fill="currentColor"
             height="16"
             width="16"
@@ -33,10 +26,10 @@ const Navbar = () => {
         <a
           href="https://github.com/kamilrazadev"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer "
+          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#808080] text-[24px] rounded-[50px] cursor-pointer "
         >
           <svg
-            className="flex absolute w-[30px] h-auto font-bold transition-all z-10 text-black cursor-pointer"
+            className="flex absolute w-[25px] h-auto font-bold transition-all z-10 text-white cursor-pointer"
             viewBox="0 0 496 512"
             height="1em"
             fill="currentColor"
@@ -48,10 +41,10 @@ const Navbar = () => {
         <a
           href="https://www.linkedin.com/in/kamilrazadev/"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer "
+          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#0077b5] text-[24px] rounded-[50px] cursor-pointer "
         >
           <svg
-            className="flex absolute w-[30px] h-auto font-bold transition-all z-10 text-black cursor-pointer"
+            className="flex absolute w-[23px] h-auto font-bold transition-all z-10 text-white cursor-pointer"
             fill="currentColor"
             viewBox="0 0 448 512"
             height="1em"
@@ -66,10 +59,10 @@ const Navbar = () => {
         <a
           href="https://wa.me/923196995115"
           target="_blank"
-          className="transition-all relative flex items-center justify-center w-[50px] h-[50px] text-white text-[24px] rounded-[50px] cursor-pointer "
+          className="transition-all relative flex items-center justify-center w-[40px] h-[40px] text-white bg-[#3ae231] text-[24px] rounded-[50px] cursor-pointer "
         >
           <svg
-            className="flex absolute w-[30px] h-auto font-bold transition-all z-10 text-black cursor-pointer"
+            className="flex absolute w-[25px] h-auto font-bold transition-all z-10 text-white cursor-pointer"
             viewBox="0 0 16 16"
             fill="currentColor"
             height="16"
@@ -83,14 +76,8 @@ const Navbar = () => {
           </svg>
         </a>
       </div>
-
-      <div className="main-icon flex justify-center items-center">
-        <a href="mailto:kamilrazadev@gmail.com">
-          <img src={mailIcon} className="w-[35px]" alt="Contact Me" />
-        </a>
-      </div>
-    </nav>
+    </div>
   );
 };
 
-export default Navbar;
+export default SocialIconsMobile;

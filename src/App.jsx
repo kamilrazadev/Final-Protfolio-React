@@ -4,6 +4,7 @@ import HeroSection from "./Sections/HeroSection";
 import Navbar from "./Components/Navbar";
 import { useEffect, useState } from "react";
 import sanityClient from "@sanity/client";
+import SocialIconsMobile from "./Components/SocialIconsMobile";
 
 const client = sanityClient({
   projectId: "3z2jwl9q",
@@ -34,6 +35,7 @@ const App = () => {
   return (
     <main className=" min-h-screen">
       <Navbar />
+      <SocialIconsMobile />
       <HeroSection />
       <div>
         {pets.map((pet) => (

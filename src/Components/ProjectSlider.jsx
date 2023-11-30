@@ -1,21 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import { getAllProjects } from "../sanity/queries";
 
 const ProjectSlider = () => {
+  // const [projects, setProjects] = useState([]);
+
+  // const fetchData = async () => {
+  //   const data = await getAllProjects();
+  //   setProjects(data);
+  // };
+
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const [projects, setProjects] = useState([
     {
-      projectImage: "https://via.placeholder.com/1920x1080",
-      projectTitle: "FoodnFood",
-      projectDesc: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      image: "https://via.placeholder.com/1920x1080",
+      title: "FoodnFood",
+      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
     {
-      projectImage: "https://via.placeholder.com/1920x1080",
-      projectTitle: "Get Resume",
-      projectDesc: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      image: "https://via.placeholder.com/1920x1080",
+      title: "Get Resume",
+      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
   ]);
 
@@ -46,14 +56,16 @@ const ProjectSlider = () => {
             key={index}
             className="project-slide flex-shrink-0 w-full h-full flex flex-col items-center justify-center"
           >
-            <img
-              src={project.projectImage}
-              alt=""
-              className="w-[80%] h-auto max-h-[70vh] object-cover"
-            />
-            <h1 className="text-2xl font-bold mt-4">{project.projectTitle}</h1>
+            {project.image && (
+              <img
+                src={project.image}
+                alt=""
+                className="w-[80%] h-auto max-h-[70vh] object-cover"
+              />
+            )}
+            <h1 className="text-2xl font-bold mt-4">{project.title}</h1>
             <p className="text-sm text-gray-600 text-center">
-              {project.projectDesc}
+              {project.description}
             </p>
           </div>
         ))}

@@ -28,3 +28,9 @@
 //   const query = '*[_type == "pet"]';
 //   return fetchData(query);
 // };
+
+// export const getAllProjects = async () => {
+//     const query = '*[_type == "projects"]';
+//     return fetchData(query);
+//   };
+  

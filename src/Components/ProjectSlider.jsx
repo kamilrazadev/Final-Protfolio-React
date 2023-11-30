@@ -1,47 +1,68 @@
 import React, { useState } from "react";
-import "../Components/Components.css";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
-const ProjectSlider = ({ images }) => {
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
+const ProjectSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [projects, setProjects] = useState([
+    {
+      projectImage: "https://via.placeholder.com/1920x1080",
+      projectTitle: "FoodnFood",
+      projectDesc: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    },
+    {
+      projectImage: "https://via.placeholder.com/1920x1080",
+      projectTitle: "Get Resume",
+      projectDesc: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    },
+  ]);
+
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
     );
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="slider-container relative overflow-hidden w-full">
       <button
         onClick={prevSlide}
-        className="absolute top-[50%] text-[25px] md:text-[50px] bg-none border-none cursor-pointer translate-y-[-50%] left-[2px] min-[475]:left[5px] sm:left-[15px] md:left-[20px]"
+        className="arrow-btn left-arrow absolute top-[42%] z-10 left-0 sm:left-3  transform -translate-y-1/2 font-bold text-black"
       >
-        <IoIosArrowBack />
+        <IoIosArrowBack className="cursor-pointer" />
       </button>
       <div
-        className="slider-inner flex justify-center transition-transform duration-400 ease-linear"
+        className="slider-inner flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {images.map((image, index) => (
-          <img
+        {projects.map((project, index) => (
+          <div
             key={index}
-            src={image}
-            alt={`slide ${index}`}
-            className="h-auto max-h-[100vh]"
-          />
+            className="project-slide flex-shrink-0 w-full h-full flex flex-col items-center justify-center"
+          >
+            <img
+              src={project.projectImage}
+              alt=""
+              className="w-[80%] h-auto max-h-[70vh] object-cover"
+            />
+            <h1 className="text-2xl font-bold mt-4">{project.projectTitle}</h1>
+            <p className="text-sm text-gray-600 text-center">
+              {project.projectDesc}
+            </p>
+          </div>
         ))}
       </div>
       <button
         onClick={nextSlide}
-        className="absolute top-[50%] text-[25px] md:text-[50px] bg-none border-none cursor-pointer translate-y-[-50%] right-[2px] min-[475]:right[5px] sm:right-[15px] md:right-[20px]"
+        className="arrow-btn right-arrow absolute top-[42%] z-10 right-0 sm:right-3 transform -translate-y-1/2 font-bold text-black"
       >
-        <IoIosArrowForward />
+        <IoIosArrowForward className="cursor-pointer" />
       </button>
     </div>
   );
